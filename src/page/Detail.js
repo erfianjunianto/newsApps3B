@@ -27,6 +27,7 @@ export default class Detail extends Component {
         <Content>
           <Image source={require('../images/beach.jpeg')} style={{height: 200, width: null,flex: 1, borderRadius:0}}/>
         
+        
           {/* <Image source={{uri: 'https://cdn.pixabay.com/photo/2014/10/26/17/19/fishermen-504098__340.jpg'}} style={{height: 200, width: null,flex: 1}}/> */}
             <View style={{fontSize:20, padding:10}}>
                 <Text>
