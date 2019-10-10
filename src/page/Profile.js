@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Footer, FooterTab, Content, Text, Card, CardItem, View, H3 } from 'native-base';
 import Footernav from './Footernav';
-
+import { Actions } from 'react-native-router-flux';
 export default class Profile extends Component {
   render() {
     return (
@@ -16,7 +16,7 @@ export default class Profile extends Component {
             <Title>PROFILE</Title>
           </Body>
           <Right>
-            <Button transparent>
+            <Button transparent onPress={()=>{Actions.notification()}}>
               <Icon type="Entypo" name='bell' />
             </Button>
           </Right>

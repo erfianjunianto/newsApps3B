@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Footer, FooterTab, Content, Text, Card, CardItem, View, H3 } from 'native-base';
 import Isi from './Isi';
+import Footernav from './Footernav';
+import { Actions } from 'react-native-router-flux';
 export default class Detail extends Component {
   render() {
     return (
@@ -16,7 +18,7 @@ export default class Detail extends Component {
             <Title>NEWS DETAIL</Title>
           </Body>
           <Right>
-            <Button transparent>
+            <Button transparent onPress={()=>{Actions.notification()}}>
               <Icon type="Entypo" name='bell' />
             </Button>
           </Right>
@@ -42,19 +44,7 @@ export default class Detail extends Component {
          
         </Content>
 
-        <Footer>
-          <FooterTab>
-            <Button>
-              <Icon name="home" />
-            </Button>
-            <Button>
-              <Icon name="person" />
-            </Button>
-            <Button>
-              <Icon type="FontAwesome" name="gear" />
-            </Button>
-          </FooterTab>
-        </Footer>
+        <Footernav />
       </Container>
     );
   }

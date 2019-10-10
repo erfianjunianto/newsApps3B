@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Header, Left, Body, Right, Button, Icon, Title, Footer, FooterTab, Content, Text, Card, CardItem, View, H3 } from 'native-base';
-
+import Footernav from './Footernav';
+import { Actions } from 'react-native-router-flux';
 export default class Notification extends Component {
   render() {
     return (
@@ -26,19 +27,7 @@ export default class Notification extends Component {
           
         </Content>
 
-        <Footer>
-          <FooterTab>
-            <Button>
-              <Icon name="home" />
-            </Button>
-            <Button>
-              <Icon name="person" />
-            </Button>
-            <Button>
-              <Icon type="FontAwesome" name="gear" />
-            </Button>
-          </FooterTab>
-        </Footer>
+        <Footernav />
       </Container>
     );
   }
